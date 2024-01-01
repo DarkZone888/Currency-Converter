@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="converter">
+    <p>Currency Converter</p>
+    <br>
+    <p for="amount">Enter Amount :</p>
+    <input type="number" id="amount" placeholder="Enter amount" step="0.01">
+
+    <label for="from">From Currency :
+        <select name='options' id="from">
+            <option value="usd">USD</option>
+            <option value="thb">THB</option>
+        </select>
+      </label>
+
+      <label for="to">To Currency :
+        <select name='options' id="to">
+            <option value="usd">USD</option>
+            <option value="thb">THB</option>
+        </select>
+      </label>
+ 
+    <button onclick="convertCurrency()">Convert</button>
+    <br>
+    <p id="result"></p>
+</div>
+
+<script src="exchange.js"></script>
+
+</body>
+</html>
